@@ -1,0 +1,157 @@
+/* INFORMAÇÕES */
+.container{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.games,
+.info{
+  display: block;
+  width: 0;
+  height: 100vh;
+  position: absolute;
+  text-align: center;
+  padding: 40px 30px;
+  transition: all .2s ease-in;
+  visibility: hidden;
+  overflow-x: hidden;
+}
+.info{
+  background-color: #e36835;
+}
+.games{
+  background-color: #fff;
+}
+span{
+  color: #fff;
+  line-height: 1.2rem;
+  display: block;
+}
+.games span{
+  color: #e36835;
+}
+.games h4{
+  color: #000;
+}
+h4{
+  color: #fbff00;
+}
+
+
+/* BOTÃO DO MENU */
+.btn-close{
+  height: 40px;
+  width: 40px;
+  /* background-color: #fff; */
+  position: absolute;
+  right: 20px;
+  top: 35px;
+  cursor: pointer;
+}
+.bar{
+  height: 5px;
+  width: 35px;
+  background-color: #fff;
+  transform: rotate(45deg);
+}
+.bar::after{
+  content: '';
+  height: 5px;
+  width: 35px;
+  background-color: #fff;
+  transform: rotate(270deg);
+  position: absolute;
+  left: 0;
+}
+.games .bar{
+  background-color:#e36835;
+}
+.games .bar::after{
+  background-color: #e36835;
+}
+
+
+
+
+
+/* TELA DO JOGO */
+.screen-container{
+  background-color: #fff;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container-login{
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.title-game{
+  text-align: center;
+  font-size: 1.4rem;
+  color: #000;
+  margin-bottom: 20px;
+}
+.title{
+  text-align:center;
+  font-size: 2rem;
+  color: #e36835;
+  margin-bottom: 20px;
+}
+img{
+  width: 100%;
+}
+.login-input{
+  border: 2.5px solid #ccc;
+  color: #333;
+  border-radius: 8px;
+  padding: 10px;
+  outline: none;
+  font-size: .8rem;
+  margin-bottom: 20px;
+  width: 80%;
+  max-width: 300px;
+  text-align: center;
+}
+button{
+  background-color: #e36835;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-size: .8rem;
+  width: 80%;
+  max-width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.login-button:disabled{
+  background-color: #ccc;
+  color: #333;
+  cursor: auto;
+}
+
+/* MOBILE */
+
+@media (max-width: 425px) {
+
+  .info,
+  .games{
+    font-size: 0.9rem;
+    padding: 40px 20px;
+  }
+  span{
+    line-height: 1.2rem;
+  }
+}

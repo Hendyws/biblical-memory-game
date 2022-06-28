@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../src/css/reset.css">
+  <link rel="stylesheet" href="../src/css/game-memory-style.css">
+  <link rel="shortcut icon" href="../src/img/favicon.ico" type="image/x-icon">
+  <title>Memory Bible</title>
+</head>
+<body>
+  <div class="player">
+    <div>Nome Jogador</div>
+    <div>Tentativas</div>
+    <div>Contador</div>
+  </div>
+  <div class="msg">
+    Escolha o seu nome cadastrado.
+  </div>
+  <div class="player">
+    <div class="name">
+      <select name="" id="select" required>
+        <!-- <option value=""></option> -->
+      </select>
+    </div>
+    <div class="attempts">--</div>
+    <div class="time-counter">01:00</div>
+  </div>
+  <div class="container-cards">
+    <!-- <div class="card">
+      <div class="card-face front"></div>
+      <div class="card-face back"></div>
+    </div> -->
+  </div>
+  <div class="finish">
+   <!-- Helena, você tentou 26 vezes. Seu record atual de tentativa é 16. -->
+  </div>
+  <script src="../src/js/cards.js"></script>
+  <script src="../src/js/login.js"></script>
+  <script src="../src/js/game-memory.js"></script>
+</body>
+</html>
